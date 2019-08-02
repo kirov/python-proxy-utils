@@ -11,7 +11,7 @@ class ProxyHelper:
         self.proxy_providers = [
             ('https://www.proxy-list.download/api/v1/get?type=http', self._proxy_list_parser_http),
             ('https://www.proxy-list.download/api/v1/get?type=https', self._proxy_list_parser_https),
-            ('https://free-proxy-list.net/', self._free_proxy_list_parser)
+            # ('https://free-proxy-list.net/', self._free_proxy_list_parser)
         ]
         self.proxies = self._init_proxies(self.proxy_providers)
 
